@@ -1,5 +1,4 @@
 import express from 'express';
-import serverless from 'serverless-http'
 
 const app = express();
 
@@ -34,5 +33,3 @@ app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
     }
 );
-
-module.exports.handler = serverless(app);
